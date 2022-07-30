@@ -1,3 +1,5 @@
+package one;
+
 import java.util.Scanner;
 
 public class Ex07
@@ -13,7 +15,7 @@ public class Ex07
 //        System.out.println("Enter y: ");
 //        int y = myObj.nextInt();
 //
-//        System.out.print("Result pow: " + Round.my_pow(x,y));
+//        System.out.print("Result pow: " + one.Round.my_pow(x,y));
 //        System.out.println(Math.pow(x,y));
 
 

@@ -1,3 +1,5 @@
+package one;
+
 import java.util.Scanner;
 
 public class Ex06 {
@@ -19,9 +21,9 @@ public class Ex06 {
 
 
 
-//        int max = Utility.findMax(arr, Integer.MAX_VALUE);
-//        int sec_max = Utility.findMax(arr, max);
-//        int thi_max = Utility.findMax(arr, sec_max);
+//        int max = one.Utility.findMax(arr, Integer.MAX_VALUE);
+//        int sec_max = one.Utility.findMax(arr, max);
+//        int thi_max = one.Utility.findMax(arr, sec_max);
 //
 //        System.out.println("woof woof: " + thi_max);
 
