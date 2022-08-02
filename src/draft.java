@@ -58,7 +58,7 @@ public class draft
 
 
                 // Recursively heapify the affected sub-tree
-                heapify(arr, n, largest);
+//                heapify(arr, n, largest);
 
                 printArray(arr);
 
@@ -78,8 +78,8 @@ public class draft
         public static void main(String args[])
         {
 //            int arr[] = { 9, 8, 2, 6, 4 , 3, 5, 4, 1, 7, 2, 9, 0 };
-            int arr[] = { 2, 7, 3, 1, 4, 6, 5, 8};
-
+//            int arr[] = { 2, 7, 3, 1, 4, 6, 5, 8};
+            int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8};
             int n = arr.length;
 
             for (int x = 0; x < n; ++x)
