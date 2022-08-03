@@ -1,3 +1,5 @@
+package SortingAlgorithms;
+
 import java.io.Console;
 
 public class draft
