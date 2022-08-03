@@ -7,7 +7,7 @@ public class Ex02
 {
     public static void main(String[] args)
     {
-        Integer arr[] = {9, 6, 2, 9, 7, 2, 1, 6, 9, 0, 2};
+        Integer[] arr = {9, 6, 2, 9, 7, 2, 1, 6, 9, 0, 2};
 
         // ----------------------process
 //        int max = Collections.max(Arrays.asList(arr));
@@ -50,10 +50,10 @@ public class Ex02
 
         // ----------------------process
         int n =0;
-        boolean flag[] = new boolean[arr.length];
+        boolean[] flag = new boolean[arr.length];
         for (int i = 0; i < arr.length - 1; i++)
         {
-            if(flag[i] == false) {
+            if(!flag[i]) {
                 n++;
                 for (int j = i + 1; j < arr.length; j++) {
                     if (arr[j] == arr[i]) {
@@ -67,16 +67,16 @@ public class Ex02
 
         //-----------------Output
         //Shrink an array
-        Integer brr[] = new Integer[n];
+        Integer[] brr = new Integer[n];
         int x = 0;
         for (int i = 0; i < arr.length; i++)
         {
-            if(flag[i] == false){
+            if(!flag[i]){
                 brr[x] = arr[i];
                 x++;
             }
         }
-        for(int i = 0; i < n; i++)
+        for(int i = 0; i < x; i++)
         {
             System.out.print(arr[i] + " ");
         }
