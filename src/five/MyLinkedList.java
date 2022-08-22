@@ -150,26 +150,23 @@ public class MyLinkedList<T>
         return -1;
     }
 
-    public void print(boolean h)
+    public void print(boolean flag)
     {
-        if(h == true){
-            Node current = head;
-            while (current != null)
-            {
-                System.out.println(current.data + " ");
-                current = current.next;
-            }
-            System.out.println();
-        }
-        if(h == false)
+        p(head, flag);
+        System.out.println();
+    }
+
+    public void p (Node current, boolean flag)
+    {
+        if (current == null) return;
+//        if (head.next == null) System.out.print(head.data);
+        else
         {
-            Node current = head;
-            while (current != null)
-            {
-                System.out.println(removeLast() + " ");
-                current = current.next;
-            }
-            System.out.println();
+            if(flag) System.out.print(current.data + " ");
+            p(current.next, flag);
+            if (!flag) System.out.print(current.data + " ");
         }
     }
+
+
 }

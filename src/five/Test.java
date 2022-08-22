@@ -14,6 +14,7 @@ public class Test
 //        MyList.removeLast();
 //        MyList.addMiddle(4,11);
 //        MyList.removeMiddle(3);
+        MyList.print(true);
         MyList.print(false);
 
 //        Node one = new Node(9);
