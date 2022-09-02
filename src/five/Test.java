@@ -4,18 +4,34 @@ public class Test
 {
     public static void main (String[] args)
     {
-        MyLinkedList<Integer> MyList = new MyLinkedList<>();
-        MyList.add(9);
-        MyList.add(10);
-        MyList.add(5);
-        MyList.add(8);
-//        MyList.addFirst(7);
-//        MyList.removeFirst();
-//        MyList.removeLast();
-//        MyList.addMiddle(4,11);
-//        MyList.removeMiddle(3);
-        MyList.print(true);
-        MyList.print(false);
+        SinglyLinkedList<Integer> MyList1 = new SinglyLinkedList<>();
+//        MyList1.add(27);
+//        MyList1.add(30);
+//        MyList1.add(15);
+//        MyList1.add(24);
+//        MyList1.addFirst(21);
+//        MyList1.removeFirst();
+//        MyList1.removeLast();
+//        MyList1.addMiddle(4,11);
+//        MyList1.removeMiddle(4);
+        MyList1.sort(MyList1);
+//        MyList1.print(true);
+//        MyList1.print(false);
+
+
+        DoublyLinkedList<Integer> MyList2 = new DoublyLinkedList<>();
+        MyList2.addNode(18);
+        MyList2.addNode(20);
+        MyList2.addNode(5);
+//        MyList2.addNode(8);
+
+//        MyList2.removeLast();
+//        MyList2.removeLast();
+//
+//        MyList2.printNodes();
+
+
+
 
 //        Node one = new Node(9);
 //        Node two = new Node(10);

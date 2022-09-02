@@ -13,11 +13,7 @@ public class draft
             // Build heap (rearrange array)
             for (int i = n / 2 - 1; i >= 0; i--){
                 heapify(arr, n, i);
-//                printArray(arr);
             }
-
-
-
 
             // One by one extract an element from heap
             for (int i = n - 1; i > 0; i--) {
@@ -28,10 +24,7 @@ public class draft
                 printArray(arr);
                 // call max heapify on the reduced heap
                 heapify(arr, i, 0);
-//                printArray(arr);
             }
-
-
         }
 
         // To heapify a subtree rooted with node i which is
@@ -60,9 +53,9 @@ public class draft
 
 
                 // Recursively heapify the affected sub-tree
-//                heapify(arr, n, largest);
+                heapify(arr, n, largest);
 
-                printArray(arr);
+//                printArray(arr);
 
             }
         }
