@@ -1,7 +1,5 @@
 package five;
 
-import java.util.List;
-
 public class SinglyLinkedList<T>
 {
     private class Node
@@ -14,9 +12,10 @@ public class SinglyLinkedList<T>
             this.data = data;
             this.next = null;
         }
+
     }
 
-    private Node head = null;
+    public Node head = null;
     private Node tail = null;
 
     // Add a new node into the end of LinkedList
@@ -279,5 +278,66 @@ public class SinglyLinkedList<T>
         for (int i = 0; i < n; ++i)
             System.out.print(arr[i] + " ");
         System.out.println();
+    }
+
+    Node sortedMerge(Node a, Node b)
+    {
+        Node result = null;
+        /* Base cases */
+        if (a == null)
+            return b;
+        if (b == null)
+            return a;
+
+        /* Pick either a or b, and recur */
+        if ( (int) a.data <= (int) b.data) {
+            result = a;
+            result.next = sortedMerge(a.next, b);
+        }
+        else {
+            result = b;
+            result.next = sortedMerge(a, b.next);
+        }
+        return result;
+    }
+
+    Node mergeSort(Node h)
+    {
+        // Base case : if head is null
+        if (h == null || h.next == null) {
+            return h;
+        }
+
+        // get the middle of the list
+        Node middle = getMiddle(h);
+        Node nextofmiddle = middle.next;
+
+        // set the next of middle node to null
+        middle.next = null;
+
+        // Apply mergeSort on left list
+        Node left = mergeSort(h);
+
+        // Apply mergeSort on right list
+        Node right = mergeSort(nextofmiddle);
+
+        // Merge the left and right lists
+        Node sortedlist = sortedMerge(left, right);
+        return sortedlist;
+    }
+
+    // Utility function to get the middle of the linked list
+    public Node getMiddle(Node head)
+    {
+        if (head == null)
+            return head;
+
+        Node slow = head, fast = head;
+
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
     }
 }
