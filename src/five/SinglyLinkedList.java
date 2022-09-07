@@ -269,11 +269,7 @@ public class SinglyLinkedList<T>
 //        System.out.println();
 //    }
 
-<<<<<<< Updated upstream
     Node sortedMerge(Node a, Node b)
-=======
-    public T[] toArray(SinglyLinkedList<T> List)
->>>>>>> Stashed changes
     {
         Node result = null;
         /* Base cases */
@@ -291,13 +287,8 @@ public class SinglyLinkedList<T>
             result = b;
             result.next = sortedMerge(a, b.next);
         }
-<<<<<<< Updated upstream
-        return result;
-=======
-        result[i++] = (int) current.data;
 
-        return (T) result;
->>>>>>> Stashed changes
+        return result;
     }
 
     Node mergeSort(Node h)
@@ -311,15 +302,9 @@ public class SinglyLinkedList<T>
         Node middle = getMiddle(h);
         Node nextofmiddle = middle.next;
 
-<<<<<<< Updated upstream
+
         // set the next of middle node to null
         middle.next = null;
-=======
-    public void sort(SinglyLinkedList<T> List)
-    {
-        int n = List.length();
-        T[] arr = List.toArray(List);
->>>>>>> Stashed changes
 
         // Apply mergeSort on left list
         Node left = mergeSort(h);
