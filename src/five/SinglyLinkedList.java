@@ -302,7 +302,6 @@ public class SinglyLinkedList<T>
         Node middle = getMiddle(h);
         Node nextofmiddle = middle.next;
 
-
         // set the next of middle node to null
         middle.next = null;
 

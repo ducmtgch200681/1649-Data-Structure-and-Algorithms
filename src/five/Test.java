@@ -9,13 +9,13 @@ public class Test
         MyList1.add(30);
         MyList1.add(15);
         MyList1.add(24);
-//        MyList1.addFirst(21);
+        MyList1.addFirst(21);
 //        MyList1.removeFirst();
 //        MyList1.removeLast();
 //        MyList1.addMiddle(4,11);
 //        MyList1.removeMiddle(4);
 //        MyList1.sort(MyList1);
-        MyList1.head = MyList1.mergeSort(MyList1.head);
+//        MyList1.head = MyList1.mergeSort(MyList1.head);
         MyList1.print(true);
 //        MyList1.print(false);
 
